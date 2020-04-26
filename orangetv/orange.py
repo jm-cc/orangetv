@@ -1,5 +1,6 @@
 from urllib.request import urlopen
 import json
+import yaml
 
 def urlretrieve(url):
     return json.load(urlopen(url))
@@ -14,6 +15,7 @@ class OrangeTV():
         self.ip = ip
         self.port = port
         self.url = f"http://{self.ip}:{self.port}/remoteControl/cmd"
+        self.channel_mapping = {}
 
     def get_info(self):
         return urlretrieve(f"{self.url}?operation=10")
@@ -55,3 +57,19 @@ class OrangeTV():
         for c in ch:
             self.press_key(OrangeTV.number_keys[c])
         return
+
+    def load_channel_mapping(self, yaml_file):
+        with open(yaml_file) as f:
+            self.channel_mapping = yaml.load(f, Loader=yaml.Loader)
+            original_keys = list(self.channel_mapping)
+            for k in original_keys:
+                current_channel = self.channel_mapping[k]
+                for a in current_channel.get("alias",[]):
+                    self.channel_mapping[a] = current_channel
+
+    def switch_over_name(self, name):
+        if name in self.channel_mapping:
+            if "epg" in self.channel_mapping[name]:
+                return self.switch_over_epg(self.channel_mapping[name]["epg"])
+            if "channel" in self.channel_mapping[name]:
+                return self.type_channel_id(self.channel_mapping[name]["channel"])
