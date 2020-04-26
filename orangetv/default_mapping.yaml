@@ -1,11 +1,11 @@
 tf1:
   epg: 192
   channel: 1
-  alias: ["TF1","TF 1", "tf1", "tf 1"]
+  alias: ["tf1", "tf 1"]
 france2:
   epg: 4
   channel: 2
-  alias: ["France 2", "france 2"]
+  alias: ["france 2"]
 france3:
   channel: 3
-  alias: ["France 3", "france 3"]
+  alias: ["france 3"]
