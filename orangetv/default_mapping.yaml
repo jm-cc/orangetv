@@ -7,5 +7,109 @@ france2:
   channel: 2
   alias: ["france 2"]
 france3:
+  epg: 80
   channel: 3
   alias: ["france 3"]
+france5:
+  epg: 47
+  channel: 5
+  alias: ["france 5"]
+m6:
+  epg: 118
+  channel: 6
+  alias: ["m 6"]
+arte:
+  epg: 111
+  channel: 7
+c8:
+  epg: 445
+  channel: 8
+  alias: ["c 8"]
+w9:
+  epg: 119
+  channel: 9
+  alais: ["w 9"]
+tmc:
+  epg: 195
+  channel: 10
+  alias: ["t m c"]
+tfx:
+  epg: 446
+  channel: 11
+  alias: ["t f x"]
+nrj12:
+  epg: 444
+  channel: 12
+  alias: ["énergie 12", "nrj 12"]
+public sénat:
+  epg: 234
+  channel: 13
+  alias: []
+france4:
+  epg: 78
+  channel: 14
+  alias: ["france 4"]
+bfm:
+  epg: 481
+  channel: 15
+  alias: ["bfm tv"]
+cnews:
+  epg: 226
+  channel: 16
+  alias: ["c news"]
+cstar:
+  epg: 458
+  channel: 17
+  alias: ["c star"]
+gulli:
+  epg: 482
+  channel: 18
+  alias: []
+franceo:
+  epg: 160
+  channel: 19
+  alias: ["france o", "france ô"]
+tf1seriesfilms:
+  epg: 1484
+  channel: 20
+  alias: ["tf 1 série film","tf1 série film"]
+equipe21:
+  epg: 1401
+  channel: 21
+  alias: ["l'équipe 21", "l'équipe", "l'equipe 21"]
+6ter:
+  epg: 1403
+  channel: 22
+  alias: ["6 ter"]
+rmcstory:
+  epg: 1402
+  channel: 22
+  alias: ["rmc story"]
+rmcdecouverte:
+  epg: 1400
+  channel: 23
+  alias: ["rmc découverte"]
+cherie25:
+  epg: 1399
+  channel: 25
+  alias: ["chérie 25"]
+lci:
+  epg: 112
+  channel: 26
+  alias: []
+franceinfo:
+  epg: 2111
+  channel: 27
+  alias: ["france info"]
+cnn:
+  epg: 53
+  channel: 234
+  alias: ["c n n"]
+france24:
+  epg: 529
+  channel: 227
+  alias: ["france 24"]
+bbc:
+  epg: 19
+  channel: 237
+  alias: ["b b c"]
