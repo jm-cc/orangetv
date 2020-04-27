@@ -74,7 +74,6 @@ tf1seriesfilms:
   channel: 20
   alias: ["tf 1 série film","tf1 série film"]
 equipe21:
-  epg: 1401
   channel: 21
   alias: ["l'équipe 21", "l'équipe", "l'equipe 21", "la 21"]
 6ter:
