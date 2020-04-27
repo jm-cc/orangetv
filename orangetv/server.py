@@ -1,9 +1,10 @@
 import flask
-import orange
+from . import orange
+import os
 
 IP_ORANGETV = "tvorange.home"
 PORT = 5000
-MAPPING = "default_mapping.yaml"
+MAPPING = os.path.join(os.path.dirname(__file__),"default_mapping.yaml")
 
 app = flask.Flask("Orange")
 tv = orange.OrangeTV(IP_ORANGETV)
@@ -34,5 +35,8 @@ def switch_to_name():
     tv.switch_over_name(data)
     return data
 
-if __name__ == "__main__":
+def main():
     app.run(host="0.0.0.0", port=PORT)
+
+if __name__ == "__main__":
+    main()
