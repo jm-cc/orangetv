@@ -13,9 +13,22 @@ Then, use ifttt.com to create 3 Applets.
 
 # Get prepared
 
-- Fixed IP for Orange TV
+- Python 3
+- Fixed IP for Orange TV (with default dns name : tvorange)
 - Dynamic DNS to access your local network
-- A computer (able to run python3, a Pi will do for example) with a port exposed through NAT.
+- A computer (able to run python3, a Pi will do for example) with port 5000 exposed through NAT.
+
+# Install and launch the server
+
+```
+git clone https://github.com/jm-cc/orangetv.git
+cd orangetv
+pip3 install .
+```
+This will install a tvorange executable, which may or may not be in your path.
+
+Regardless of that, you can launch the server using :
+`python3 -m orangetv.server`
 
 # IFTTT Applets
 
